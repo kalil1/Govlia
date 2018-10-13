@@ -1,0 +1,439 @@
+<%= stylesheet_link_tag   'sb-admin' %>
+<%= stylesheet_link_tag   'dataTables.bootstrap4' %>
+  <!-- Navigation-->
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <a class="navbar-brand" href="smb_dashboard.html"> <%=image_tag 'govlia-white.png', alt: "govlia_logo" %> </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Sidebar Menu-->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <%=render 'dashboard/partials/side_bar' %>
+        <!--End Sidebar Menu-->
+        <!--Top Navigation-->
+
+        <%=render 'dashboard/partials/navbar' %>
+
+      </div>
+    </nav>
+          <!--End Top Navigation-->
+
+          <div class="content-wrapper">
+            <div class="container-fluid">
+              <!-- Breadcrumbs-->
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">All Partners</li>
+              </ol>
+              <!-- Icon Cards-->
+
+              <!-- Bid Navigation-->
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fa fa-link"></i> All Partners</div>
+                  <div class="card-body">
+                    <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All Partners</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Government Partners</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Business Partners</a>
+                        <a class="nav-item nav-link" id="nav-drafts-tab" data-toggle="tab" href="#nav-drafts" role="tab" aria-controls="nav-drafts" aria-selected="false">Following</a>
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <!--Tab 1 Content -->
+                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <!-- Bid DataTables -->
+                        <div class="card-mb-3">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Location</th>
+                                    <th>Partnership Type</th>
+                                    <th>Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Broward County Commissioner Office</td>
+                                    <td>Commissioners of Broward County office of operations and personnel management.</td>
+                                    <td>Fort Lauderdale, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Larry's Printing Pros</td>
+                                    <td>Screen printing and textile company</td>
+                                    <td>Blakely, GA</td>
+                                    <td>Prime Contractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>West Palm Purchasing</td>
+                                    <td>Purchasing division for the City of West Palm Beach.</td>
+                                    <td>West Palm Beach, FL</td>
+                                    <td>Vendor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ken and Renee's Cleaning</td>
+                                    <td>Professional commercial and residential cleaning service.</td>
+                                    <td>Miami, FL</td>
+                                    <td>Subcontractor</td>
+                                    <td><button type="button" class="btn btn-default btn-circle"><i class="fa fa-times"></i></button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--/ End Tab 1 Content -->
+                      <!--Tab 2 Content -->
+                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <!-- Bid DataTables -->
+                        <div class="row">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-hover" id="dataTable2" width="100%" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Location</th>
+                                    <th>Partnership Type</th>
+                                    <th>Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--/ End Tab 2 Content -->
+                      <!--Tab 3 Content -->
+                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <!-- Bid DataTables -->
+                        <div class="card-mb-3">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Location</th>
+                                    <th>Partnership Type</th>
+                                    <th>Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--/ End Tab 3 Content -->
+                      <!--Tab 4 Content -->
+                      <div class="tab-pane fade" id="nav-drafts" role="tabpanel" aria-labelledby="nav-drafts-tab">
+                        <!-- Bid DataTables -->
+                        <div class="row">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Unfollow</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Broward County Commissioners</td>
+                                    <td><button type="button" class="btn btn-default btn-circle">Unfollow</button></td>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--/ End Tab 4 Content -->
+                    </div>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+            <!-- /.container-fluid-->
+            <!-- /.content-wrapper-->
+            <footer class="sticky-footer">
+              <div class="container">
+                <div class="text-center">
+                  <small>Copyright © GovLia 2018</small>
+                </div>
+              </div>
+            </footer>
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+              <i class="fa fa-angle-up"></i>
+            </a>
+            <!-- Logout Modal-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+  </body>
